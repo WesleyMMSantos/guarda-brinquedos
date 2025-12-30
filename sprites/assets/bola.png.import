@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dq82x2vmmb3p5"
-path="res://.godot/imported/bola.png-71e4d8f1be2f3ceb8716a53d6cad8be5.ctex"
+path="res://.godot/imported/bola.png-1d06f4962fc44d24784f2d77fa8b58ab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://bola.png"
-dest_files=["res://.godot/imported/bola.png-71e4d8f1be2f3ceb8716a53d6cad8be5.ctex"]
+source_file="res://sprites/assets/bola.png"
+dest_files=["res://.godot/imported/bola.png-1d06f4962fc44d24784f2d77fa8b58ab.ctex"]
 
 [params]
 

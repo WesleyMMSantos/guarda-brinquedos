@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://duqssato34fsq"
-path="res://.godot/imported/Bola (1).png-1a64aea29d8239da3592790562a16c00.ctex"
+uid="uid://bw4lyx2pj0kjl"
+path="res://.godot/imported/image.png-2ce5dce14c3383506cb1fe43fc8b3fb8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Bola (1).png"
-dest_files=["res://.godot/imported/Bola (1).png-1a64aea29d8239da3592790562a16c00.ctex"]
+source_file="res://sprites/assets/image.png"
+dest_files=["res://.godot/imported/image.png-2ce5dce14c3383506cb1fe43fc8b3fb8.ctex"]
 
 [params]
 

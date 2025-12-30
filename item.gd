@@ -1,5 +1,8 @@
 extends Area2D
 
+# Sinal para avisar quando o item sai da tela
+signal item_perdido
+
 @export var velocidade = 150
 var velocidade_adicional = 0
 
@@ -11,6 +14,8 @@ func _process(delta):
 
 	# Só desaparece se passar totalmente do fundo da tela (altura + 100 de margem)
 	if position.y > altura_da_tela + 100:
+		# Emite sinal de item perdido
+		item_perdido.emit()
 		queue_free()
 
 func _on_area_entered(area):

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://doupubm82bgd6"
-path="res://.godot/imported/Gemini_Generated_Image_seic43seic43seic.png-6ecc73b7ff5581e234d89cfd57d69abe.ctex"
+uid="uid://duqssato34fsq"
+path="res://.godot/imported/Bola (1).png-2a8ca1f09d8c636dde63bbf2df577023.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Gemini_Generated_Image_seic43seic43seic.png"
-dest_files=["res://.godot/imported/Gemini_Generated_Image_seic43seic43seic.png-6ecc73b7ff5581e234d89cfd57d69abe.ctex"]
+source_file="res://sprites/assets/Bola (1).png"
+dest_files=["res://.godot/imported/Bola (1).png-2a8ca1f09d8c636dde63bbf2df577023.ctex"]
 
 [params]
 

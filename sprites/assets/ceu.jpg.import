@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://doepf7m73kcim"
-path="res://.godot/imported/luvinha.png-92b7cd6e775b5eeaae82ce6b2a1f5db5.ctex"
+uid="uid://bjjxb8qt17wfu"
+path="res://.godot/imported/ceu.jpg-0f3d05416382fd0825bc729075f328c9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://luvinha.png"
-dest_files=["res://.godot/imported/luvinha.png-92b7cd6e775b5eeaae82ce6b2a1f5db5.ctex"]
+source_file="res://sprites/assets/ceu.jpg"
+dest_files=["res://.godot/imported/ceu.jpg-0f3d05416382fd0825bc729075f328c9.ctex"]
 
 [params]
 

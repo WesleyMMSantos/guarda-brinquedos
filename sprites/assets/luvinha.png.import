@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dd1rfi8mf738"
-path="res://.godot/imported/output.svg-4dcd489bcc897406c1571de7f4d745ae.ctex"
+uid="uid://doepf7m73kcim"
+path="res://.godot/imported/luvinha.png-63a2d2c3bbf26c75dc27a4dc29d1cba0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://output.svg"
-dest_files=["res://.godot/imported/output.svg-4dcd489bcc897406c1571de7f4d745ae.ctex"]
+source_file="res://sprites/assets/luvinha.png"
+dest_files=["res://.godot/imported/luvinha.png-63a2d2c3bbf26c75dc27a4dc29d1cba0.ctex"]
 
 [params]
 
@@ -38,6 +38,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false

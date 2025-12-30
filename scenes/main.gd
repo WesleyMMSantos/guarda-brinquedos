@@ -3,6 +3,7 @@ extends Node2D
 # Cena do item que vai cair
 @export var item_cena: PackedScene
 var score = 0
+var vidas = 3
 
 func _ready():
 	# Conecta o sinal do jogador para contar pontos
@@ -11,6 +12,9 @@ func _ready():
 
 func _on_timer_timeout():
 	var novo_item = item_cena.instantiate()
+
+	# Conecta o sinal de item perdido
+	novo_item.connect("item_perdido", _on_item_perdido)
 
 	# Aumenta a velocidade baseada na pontuação (a cada 5 pontos, +20 de velocidade)
 	if novo_item.has_method("set") and "velocidade_adicional" in novo_item:
@@ -38,3 +42,20 @@ func _on_item_coletado():
 	score += 1
 	$Placar/Label.text = "Pontos: " + str(score)
 	print("Item coletado! Pontos: " + str(score))
+
+func _on_item_perdido():
+	# Função chamada quando um item sai da tela
+	vidas -= 1
+	print("Item perdido! Vidas restantes: " + str(vidas))
+	
+	if vidas <= 0:
+		game_over()
+
+func game_over():
+	print("GAME OVER!")
+	# Para o timer
+	if has_node("Timer"):
+		$Timer.stop()
+	# Mostra tela de game over (você pode criar uma cena separada)
+	# Por enquanto, reinicia o jogo
+	get_tree().reload_current_scene()
