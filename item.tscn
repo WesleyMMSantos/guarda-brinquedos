@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://c1ujs50a5q3j3"]
+
+[ext_resource type="Script" uid="uid://bm186tt6ig6me" path="res://item.gd" id="1_0hdqx"]
+[ext_resource type="Texture2D" uid="uid://duqssato34fsq" path="res://Bola (1).png" id="2_kg5e7"]
+[ext_resource type="AudioStream" uid="uid://g46lh2v2m27r" path="res://toy-button-105724.mp3" id="3_kg5e7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ys7tt"]
+radius = 40.0
+
+[node name="Item" type="Area2D"]
+script = ExtResource("1_0hdqx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-48, 18)
+shape = SubResource("CircleShape2D_ys7tt")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-53.000004, 17.015078)
+scale = Vector2(0.2311558, 0.23115581)
+texture = ExtResource("2_kg5e7")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_kg5e7")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
