@@ -8,6 +8,8 @@ var velocidade_adicional = 0
 
 func _process(delta):
 	position.y += (velocidade + velocidade_adicional) * delta
+	$ToyFallingAnimation.show()
+	$ToyFallingAnimation.play("falling")
 
 	# PEGA A ALTURA DA TELA AUTOMATICAMENTE
 	var altura_da_tela = get_viewport_rect().size.y

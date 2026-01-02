@@ -1,11 +1,40 @@
-[gd_scene load_steps=5 format=3 uid="uid://c1ujs50a5q3j3"]
+[gd_scene load_steps=9 format=3 uid="uid://c1ujs50a5q3j3"]
 
 [ext_resource type="Script" uid="uid://bm186tt6ig6me" path="res://item.gd" id="1_0hdqx"]
-[ext_resource type="Texture2D" uid="uid://duqssato34fsq" path="res://sprites/assets/Bola (1).png" id="2_kg5e7"]
 [ext_resource type="AudioStream" uid="uid://g46lh2v2m27r" path="res://songs/toy-button-105724.mp3" id="3_kg5e7"]
+[ext_resource type="Texture2D" uid="uid://cbw0ylulp0nuh" path="res://sprites/assets/bola, conj sprites.png" id="3_mt803"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ys7tt"]
 radius = 40.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mt803"]
+atlas = ExtResource("3_mt803")
+region = Rect2(10, 0, 121, 130)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3hpmx"]
+atlas = ExtResource("3_mt803")
+region = Rect2(139, 0, 121, 130)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q5bj8"]
+atlas = ExtResource("3_mt803")
+region = Rect2(268, 0, 121, 130)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ij2us"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mt803")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3hpmx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q5bj8")
+}],
+"loop": true,
+"name": &"falling",
+"speed": 5.0
+}]
 
 [node name="Item" type="Area2D"]
 script = ExtResource("1_0hdqx")
@@ -14,12 +43,13 @@ script = ExtResource("1_0hdqx")
 position = Vector2(-48, 18)
 shape = SubResource("CircleShape2D_ys7tt")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-53.000004, 17.015078)
-scale = Vector2(0.2311558, 0.23115581)
-texture = ExtResource("2_kg5e7")
-
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_kg5e7")
+
+[node name="ToyFallingAnimation" type="AnimatedSprite2D" parent="."]
+position = Vector2(-51.999996, 15.000001)
+scale = Vector2(0.7892562, 0.78925616)
+sprite_frames = SubResource("SpriteFrames_ij2us")
+animation = &"falling"
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
