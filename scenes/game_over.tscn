@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://c2ctmbm36j10a"]
+
+[ext_resource type="Script" uid="uid://g7bkyd55fna6" path="res://scenes/game_over.gd" id="1_wqhvx"]
+[ext_resource type="Texture2D" uid="uid://bjjxb8qt17wfu" path="res://sprites/assets/ceu.jpg" id="2_tbwuq"]
+
+[sub_resource type="SystemFont" id="SystemFont_racf3"]
+
+[node name="game_over" type="Node2D"]
+script = ExtResource("1_wqhvx")
+
+[node name="Ceu" type="Sprite2D" parent="."]
+position = Vector2(75.000015, 330)
+scale = Vector2(0.56396484, 0.6490478)
+texture = ExtResource("2_tbwuq")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 80.0
+offset_top = 240.0
+offset_right = 286.0
+offset_bottom = 293.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.5430873, 0, 0.7103043, 1)
+theme_override_fonts/font = SubResource("SystemFont_racf3")
+theme_override_font_sizes/font_size = 38
+text = "Game Over"
+
+[node name="Retry" type="Button" parent="."]
+offset_left = 96.0
+offset_top = 320.0
+offset_right = 280.0
+offset_bottom = 361.17484
+text = "Jogar Novamente"
+
+[connection signal="pressed" from="Retry" to="." method="_on_jogar_novamente_pressed"]

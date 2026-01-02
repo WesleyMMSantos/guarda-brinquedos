@@ -57,5 +57,6 @@ func game_over():
 	if has_node("Timer"):
 		$Timer.stop()
 	# Mostra tela de game over (você pode criar uma cena separada)
+	get_tree().change_scene_to_file("res://scenes/game_over.tscn")
 	# Por enquanto, reinicia o jogo
-	get_tree().reload_current_scene()
+	#get_tree().reload_current_scene()
